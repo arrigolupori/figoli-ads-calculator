@@ -1,11 +1,11 @@
 :root {
 	--main-font: 'proxima-nova', sans-serif;
 	--color-theme-1: #f7ea5f;
-	--color-theme-2: #40b3ff;
+	--color-theme-2: #3a3a3a;
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--main-font);
-	color: #3a3a3a;
+	color: var(--color-theme-2);
 }
 
 body {
@@ -20,7 +20,7 @@ p {
 }
 
 a {
-	color: var(--color-theme-1);
+	color: var(--color-theme-2);
 	text-decoration: none;
 }
 
@@ -35,7 +35,8 @@ h1 {
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.5rem;
+	margin: 1em 0 0 0;
 }
 
 .text-column {
@@ -51,6 +52,7 @@ input,
 button {
 	font-size: inherit;
 	font-family: inherit;
+	width: 60%;
 }
 
 button:focus:not(:focus-visible) {
