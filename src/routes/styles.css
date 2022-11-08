@@ -1,0 +1,64 @@
+:root {
+	--main-font: 'proxima-nova', sans-serif;
+	--color-theme-1: #f7ea5f;
+	--color-theme-2: #40b3ff;
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	font-family: var(--main-font);
+	color: #3a3a3a;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-size: 100vw 100vh;
+}
+
+p {
+	line-height: 1.35;
+}
+
+a {
+	color: var(--color-theme-1);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 1em 0 0 0;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
