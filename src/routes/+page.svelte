@@ -3,12 +3,16 @@
 	let target = 5000 // €
 	let ltv = 100 // €
 	let cpm = 4.5 // €
-	let ctr = 0.012 // percentage
-	let conversionRate = 0.01 // percentage
-	$: cpc = Math.round((cpm / 1000 / ctr) * 100) / 100 // €
+	let ctr = 1.2 // percentage
+	$: decimalCtr = ctr / 100
+	let conversionRate = 1.0 // percentage
+	$: decimalCr = conversionRate / 100
+
+	$: cpc = Math.round((cpm / 1000 / decimalCtr) * 100) / 100 // €
 	$: sales = Math.round((target / ltv) * 100) / 100 // number
-	$: clicks = Math.round((sales / conversionRate) * 100) / 100 //number
-	$: cpa = Math.round((cpc / conversionRate) * 100) / 100 // €
+	$: clicks = Math.round((sales / decimalCr) * 100) / 100 //number
+	$: cpa = Math.round((cpc / decimalCr) * 100) / 100 // €
+	$: budget = Math.round(cpa * sales)
 </script>
 
 <svelte:head>
@@ -30,32 +34,34 @@
 	</p>
 	<div class="outer-container">
 		<div class="inner-container">
+			<p class="step">1. Modifica i numeri qua sotto</p>
 			<div class="field">
 				<p class="field-label">Obiettivo ipotetico di guadagno</p>
-				<input type="number" bind:value={target} />
+				<input type="number" bind:value={target} /> €
 			</div>
 			<div class="field">
 				<p class="field-label">
 					Ordine medio del prodotto/servizio (o meglio Lifetime Value del cliente)
 				</p>
-				<input type="number" bind:value={ltv} />
+				<input type="number" bind:value={ltv} /> €
 			</div>
 			<div class="field">
 				<p class="field-label">Costo per 1000 impression (CPM)</p>
-				<input type="number" bind:value={cpm} />
+				<input type="number" bind:value={cpm} /> €
 			</div>
 			<div class="field">
 				<p class="field-label">Click Through Rate delle inserzioni (CTR)</p>
-				<input type="number" bind:value={ctr} max="100" min="0" />
+				<input type="number" bind:value={ctr} max="100" min="0" /> %
 			</div>
 			<div class="field">
 				<p class="field-label">Tasso di conversione di vendita dell'e-commerce</p>
-				<input type="number" bind:value={conversionRate} max="100" min="0" />
+				<input type="number" bind:value={conversionRate} max="100" min="0" /> %
 			</div>
 		</div>
 		<p class="separator-desktop">→</p>
 		<p class="separator-mobile">↓</p>
 		<div class="inner-container">
+			<p class="step">2. Esamina i risultati</p>
 			<div class="result">
 				<p class="result-label">Costo per click</p>
 				<p class="result-number">{cpc} €</p>
@@ -76,6 +82,16 @@
 				<p class="result-label">Costo per acquisizione (CPA)</p>
 				<p class="result-number">{cpa} €</p>
 			</div>
+		</div>
+		<p class="separator-desktop">→</p>
+		<p class="separator-mobile">↓</p>
+		<div class="inner-container">
+			<p class="step">3. Scopri il tuo budget</p>
+			<div class="result">
+				<p class="result-label">Stima di budget</p>
+				<p class="result-number">{budget} €</p>
+			</div>
+			<div class="cta-slot">CTA</div>
 		</div>
 	</div>
 	<div class="tutorial">
@@ -144,11 +160,11 @@
 		text-align: center;
 		font-style: italic;
 		font-size: 1.4rem;
+		max-width: 960px;
 	}
 
 	.outer-container {
 		display: flex;
-		align-items: center;
 		width: 100%;
 	}
 
@@ -157,11 +173,22 @@
 		padding: 0 1em;
 		height: fit-content;
 		width: 100%;
+		border: 1px dashed red;
+	}
+
+	.step {
+		text-align: center;
+		font-size: 1.1rem;
+		font-style: italic;
 	}
 
 	.separator-desktop,
 	.separator-mobile {
 		font-size: 2rem;
+	}
+
+	.separator-desktop {
+		margin-top: 3em;
 	}
 
 	.separator-mobile {
@@ -192,6 +219,15 @@
 		padding: 0.5em;
 	}
 
+	.cta-slot {
+		display: flex;
+		border: 1px dashed red;
+		height: 400px;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2em;
+	}
+
 	.tutorial-heading {
 		text-align: center;
 	}
@@ -216,9 +252,10 @@
 		margin: 0.5em 0;
 	}
 
-	@media (max-width: 760px) {
+	@media (max-width: 800px) {
 		.outer-container {
 			flex-direction: column;
+			align-items: center;
 		}
 
 		.separator-desktop {
