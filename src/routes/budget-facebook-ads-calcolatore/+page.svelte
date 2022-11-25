@@ -44,7 +44,7 @@
 			<p class="step">1. Modifica i numeri qua sotto</p>
 			<div class="field">
 				<p class="field-label">Obiettivo ipotetico di guadagno</p>
-				<input class="base-input" type="number" bind:value={target} /> € in totale
+				<input class="base-input" type="number" bind:value={target} min="1" /> € in totale
 			</div>
 			<div class="field">
 				<p class="field-label">
@@ -60,7 +60,7 @@
 						>
 					</span>
 				</p>
-				<input class="base-input" type="number" bind:value={ltv} /> € di media
+				<input class="base-input" type="number" bind:value={ltv} min="1" /> € di media
 			</div>
 			<div class="field">
 				<p class="field-label">
@@ -77,7 +77,7 @@
 						>
 					</span>
 				</p>
-				<input class="base-input" type="number" bind:value={cpm} /> € ad impressione
+				<input class="base-input" type="number" bind:value={cpm} min="0" /> € ad impressione
 			</div>
 			<div class="field">
 				<p class="field-label">
@@ -94,7 +94,7 @@
 						>
 					</span>
 				</p>
-				<input class="base-input" type="number" bind:value={ctr} max="100" min="0" /> % di media
+				<input class="base-input" type="number" bind:value={ctr} max="100" min="0.1" /> % di media
 			</div>
 			<div class="field">
 				<p class="field-label">
@@ -105,8 +105,8 @@
 						>
 					</span>
 				</p>
-				<input class="base-input" type="number" bind:value={conversionRate} max="100" min="0" /> % di
-				media
+				<input class="base-input" type="number" bind:value={conversionRate} max="100" min="0.1" /> %
+				di media
 			</div>
 		</div>
 		<div class="inner-container">
