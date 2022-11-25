@@ -348,7 +348,7 @@
 		left: 50%;
 		text-align: center;
 		padding: 0.5em;
-		margin-top: 3px;
+		margin-top: 1px;
 		font-size: 0.8rem;
 		margin-left: -120px;
 		box-shadow: 0px 0px 25px -10px #222222;
