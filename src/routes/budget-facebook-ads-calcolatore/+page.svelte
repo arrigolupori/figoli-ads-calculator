@@ -24,8 +24,15 @@
 </svelte:head>
 
 <section>
-	<a href="https://matteofigoli.it/" target="_blank" rel="noreferrer">
+	<a
+		style="text-align:center;"
+		class="base-link"
+		href="https://matteofigoli.it/"
+		target="_blank"
+		rel="noreferrer"
+	>
 		<img src={logo} alt="figoli studio logo ufficiale" width="180" height="106" />
+		<p style="margin: 0 0 0 -1.5em;">Cos'è Figoli Studio?</p>
 	</a>
 	<h1>Il Calcolatore di Budget Facebook Ads</h1>
 	<p class="subheading">
@@ -334,19 +341,19 @@
 	/* Tooltip text */
 	.tooltip .tooltiptext {
 		visibility: hidden;
-		width: 240px;
+		width: 150px;
 		background-color: white;
 		color: #222222;
+		top: 100%;
+		left: 50%;
 		text-align: center;
 		padding: 0.5em;
+		margin-top: 3px;
+		font-size: 0.8rem;
+		margin-left: -120px;
 		box-shadow: 0px 0px 25px -10px #222222;
 		position: absolute;
 		z-index: 1;
-	}
-
-	.tooltiptext {
-		margin-left: 1em;
-		margin-top: -0.5em;
 	}
 
 	.tooltip:hover .tooltiptext {
