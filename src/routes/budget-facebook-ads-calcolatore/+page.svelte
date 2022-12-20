@@ -36,15 +36,15 @@
 	</a>
 	<h1>Il Calcolatore di Budget Facebook Ads</h1>
 	<p class="subheading">
-		Usa questo calcolatore per individuare il budget da utilizzare su Facebook Ads mensilmente,
-		basandoti sull'obiettivo di guadagno che ti vuoi preporre.
+		Usa questo calcolatore per individuare il budget da utilizzare su Facebook Ads,
+		basandoti sull'obiettivo di guadagno che ti sei preposto.
 	</p>
 	<div class="outer-container">
 		<div class="inner-container">
 			<p class="step">1. Modifica i numeri qua sotto</p>
 			<div class="field">
 				<p class="field-label">Obiettivo ipotetico di guadagno</p>
-				<input class="base-input" type="number" bind:value={target} min="1" /> € in totale
+				<input class="base-input" type="number" bind:value={target} min="1" /> €
 			</div>
 			<div class="field">
 				<p class="field-label">
@@ -77,7 +77,7 @@
 						>
 					</span>
 				</p>
-				<input class="base-input" type="number" bind:value={cpm} min="0" /> € ad impressione
+				<input class="base-input" type="number" bind:value={cpm} min="0" /> €
 			</div>
 			<div class="field">
 				<p class="field-label">
@@ -138,10 +138,10 @@
 		<div class="cta-section">
 			<div class="result budget">
 				<p class="result-label">Stima di budget</p>
-				<p class="result-number">{budget} € al mese</p>
+				<p class="result-number">{budget} €</p>
 			</div>
 			<div class="cta">
-				<h2 class="cta-title">Vuoi sapere come utilizzare al meglio questo budget?</h2>
+				<h2 class="cta-title">Come scegliere il consulente giusto per gestire questo budget</h2>
 				<p class="cta-text">
 					Abbiamo creato una guida che ti permette di scegliere il consulente ideale per realizzare
 					i tuoi obiettivi pubblicitari.
@@ -325,7 +325,7 @@
 		text-align: center;
 		font-style: italic;
 		font-size: 1.4rem;
-		max-width: 960px;
+		max-width: 930px;
 	}
 
 	.tooltip {
