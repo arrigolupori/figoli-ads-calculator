@@ -179,7 +179,7 @@
 		</p>
 
 		<p>
-			Il nostro calcolatore di budget per Facebook e Instagram Ads parte dalla nostra esperienza e
+			Il <strong>nostro calcolatore di budget per Facebook e Instagram Ads</strong> parte dalla nostra esperienza e
 			ti aiuta a capire come funziona la logica dietro la definizione del budget, le variabili che
 			la influenzano e quello che puoi fare per migliorare.
 		</p>
@@ -191,76 +191,90 @@
 			applicabile anche ad attività di generazione di contatti di valore (Lead Generation).
 		</p>
 
-		<h3>CPM - Costo per 1000 Impression</h3>
-		<p>
-			Questa metrica ci indica quanto costa far vedere il nostro annuncio a mille persone. Di solito
-			è una metrica “oggettiva”, risultante delle aste pubblicitarie che avvengono tra i diversi
-			inserzionisti sulle piattaforme.
-		</p>
-
-		<h3>CTR - Click Through Rate</h3>
-		<p>
-			Ovvero la percentuale di utenti che cliccano sul nostro annuncio. Più è alto, più il nostro
-			annuncio sarà attraente per gli utenti.
-		</p>
-		<p>
-			Si tratta di una metrica su cui abbiamo un forte controllo, perché dipende da quanto il nostro
-			annuncio - e la sua creatività - attira l&apos;attenzione degli utenti.
-		</p>
-
-		<h3>Tasso di conversione</h3>
-		<p>
-			Il tasso di utenti che compie l'azione che vogliamo compia. Possono essere vendite sul sito
-			e-commerce o raccolta contatti (Lead Generation) dentro o fuori dalla piattaforma. Una metrica
-			che ci dice quanto la pagina o il modulo su cui portiamo l&apos;utente è per lui interessante
-			al punto di spingerlo a compiere un&apos;azione rilevante a livello di business.
-		</p>
-
-		<h3>Lifetime Value</h3>
-		<p>
-			Ossia quanto valore complessivo ci permette di generare un nuovo cliente, quanto guadagniamo
-			da ogni nuovo cliente in media. Se si tratta di ordini fatti una volta sola, corrisponde al
-			valore dell&apos;ordine medio. Se il cliente compra più volte nel tempo, il valore complessivo
-			medio che porta nelle tasche della nostra azienda. Più saremo bravi a fidelizzare il cliente,
-			più il ritorno dell&apos;investimento rispetto al primo contatto sarà alto.
-		</p>
+		<ul>
+			<li>
+				<h3>CPM - Costo per 1000 Impression</h3>
+				<p>
+					Questa metrica ci indica <strong>quanto costa far vedere il nostro annuncio a mille persone.</strong> Di solito
+					è una metrica “oggettiva”, risultante delle aste pubblicitarie che avvengono tra i diversi
+					inserzionisti sulle piattaforme.
+				</p>
+			</li>
+			<li>
+				<h3>CTR - Click Through Rate</h3>
+				<p>
+					Ovvero la percentuale di utenti che cliccano sul nostro annuncio. Più è alto, più il nostro
+					annuncio sarà attraente per gli utenti. 
+					Si tratta di una metrica su cui abbiamo un forte controllo, perché dipende da quanto il nostro
+					annuncio - e la sua creatività - attira l&apos;attenzione degli utenti.
+				</p>
+			</li>
+			<li>
+				<h3>Tasso di conversione</h3>
+				<p>
+					Il tasso di utenti che compie l'azione che vogliamo compia. Possono essere vendite sul sito
+					e-commerce o raccolta contatti (Lead Generation) dentro o fuori dalla piattaforma. Una metrica
+					che ci dice quanto la pagina o il modulo su cui portiamo l&apos;utente è per lui interessante
+					al punto di spingerlo a compiere un&apos;azione rilevante a livello di business.
+				</p>
+			</li>
+			<li>
+				<h3>Lifetime Value</h3>
+				<p>
+					Ossia quanto valore complessivo ci permette di generare un nuovo cliente, <strong>quanto guadagniamo
+					da ogni nuovo cliente in media.</strong> Se si tratta di ordini fatti una volta sola, corrisponde al
+					valore dell&apos;ordine medio. Se il cliente compra più volte nel tempo, il valore complessivo
+					medio che porta nelle tasche della nostra azienda. Più saremo bravi a fidelizzare il cliente,
+					più il ritorno dell&apos;investimento rispetto al primo contatto sarà alto.
+				</p>
+			</li>
+		</ul>
 
 		<h2>Come si usa</h2>
-
-		<p>Inserisci i dati richiesti dal calcolatore se li conosci.</p>
-
-		<p>
-			Se non li conosci, ipotizza un valore il più realistico possibile rispetto alla tua azienda.
-			Inserisci un obiettivo di fatturatoIl calcolatore restituirà una proiezione dei dati utili a
-			raggiungere l'obiettivo, tra cui il budget minimo da cui partire.
-		</p>
+		<ol>
+			<li>
+				<p>Inserisci i dati richiesti dal calcolatore se li conosci. Se non li conosci, ipotizza un valore il più realistico possibile rispetto alla tua azienda.</p>
+			</li>
+			<li>
+				<p>Inserisci un obiettivo di fatturato.</p>
+			</li>
+			<li>
+				<p>Il calcolatore restituirà una proiezione dei dati utili a raggiungere l'obiettivo, tra cui il budget minimo da cui partire.</p>
+			</li>
+		</ol>
 
 		<h2>Avvertenza</h2>
 
 		<p>
-			Si tratta di dati generici, un calcolatore così semplice non tiene conto delle variabili e
-			frizioni presenti nel mondo reale. Restituirà dei risultati ipotetici, calcolati in un
+			Si tratta di dati generici, <strong>un calcolatore così semplice non tiene conto delle variabili e
+			frizioni presenti nel mondo reale.</strong> Restituirà dei risultati ipotetici, calcolati in un
 			ambiente “di laboratorio” dove nessuna variabile esterna si intromette per cambiare le
 			proiezioni.
 		</p>
 
-		<p>
+		<p class='outstanding'>
 			Serve a mostrare solamente una cifra minima da cui partire, per sgombrare il campo da
 			aspettative irrealistiche
 		</p>
 
 		<p>Ad esempio, tra le cose che non vengono considerate ci sono le seguenti:</p>
 
-		<p>
-			I clic sul link non sono tutti visite al sito: si stima che se il caricamento della pagina è
-			lento, una buona percentuale di utenti abbandoni il sito invece di attendere (15-25%)
-		</p>
+		<ul>
+			<li>
+				<p>
+					I clic sul link non sono tutti visite al sito: si stima che se il caricamento della pagina è
+					lento, una buona percentuale di utenti abbandoni il sito invece di attendere (15-25%)
+				</p>
+			</li>
 
-		<p>
-			Il calcolatore ipotizza solo conversioni a freddo, mentre il percorso di conversione, ovvero
-			il percorso che l'utente fa dal conoscerci all'acquisto, è la maggior parte delle volte
-			composta da due fasi, per cui andrebbero considerati budget ad hoc.
-		</p>
+			<li>
+				<p>
+					Il calcolatore ipotizza solo conversioni a freddo, mentre il percorso di conversione, ovvero
+					il percorso che l'utente fa dal conoscerci all'acquisto, è la maggior parte delle volte
+					composta da due fasi, per cui andrebbero considerati budget ad hoc.
+				</p>
+			</li>
+		</ul>
 
 		<h2>Una panoramica ipotetica, ma razionale</h2>
 
@@ -271,8 +285,8 @@
 		</p>
 
 		<p>
-			Le variabili da considerare sono tante, per questo è fondamentale non improvvisarsi nella
-			gestione delle Facebook Ads.
+			Le variabili da considerare sono tante, per questo <strong>è fondamentale non improvvisarsi nella
+			gestione delle Facebook Ads.</strong>
 		</p>
 
 		<p>
@@ -408,9 +422,15 @@
 		font-size: 1.5rem;
 	}
 
+	.outstanding {
+		background-color: var(--color-theme-1);
+		text-align: center;
+		font-weight: bold;
+		padding: 1em;
+	}
+
 	.tutorial-heading {
 		margin-top: 2em;
-		text-align: center;
 	}
 
 	.tutorial-text {
